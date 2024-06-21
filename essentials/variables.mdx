@@ -1,0 +1,35 @@
+---
+title: 'Using variables'
+description: 'Using variables for dynamic content'
+icon: 'palette'
+---
+
+Rendless allows you to generate images with dynamic content like text, images, colors, using variables. You can use variables in the template editor to define dynamic content that will be replaced when rendering the image.
+
+## Variables syntax
+
+Variables are defined in the template editor using the following syntax:
+
+`{{variable_name}}`
+
+For example, you can define a variable for the name of a person like this:
+
+`{{name}}`
+
+You can use variables in the text diretly or in the properties inputs of the elements.
+
+## Using variables in the API
+
+When generating an image using the API, you need to provide the values for the variables in the query parameters. For example, if you have a variable `name` in your template, you can provide the value for the variable like this:
+
+```bash
+curl -X GET https://rendless.com/api/simple-url/TEMPLATE_ID?name=John
+```
+
+## Variables limitations
+
+Some varaibles won't work because they are reserved for the API or the template editor. Here is the table list of reserved variables:
+
+| Variable name | Description                      |
+| ------------- | -------------------------------- |
+| `templateId`       | Template id used to generate an image  |
