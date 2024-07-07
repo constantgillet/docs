@@ -23,7 +23,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the template",
+            "description": "ID of the template, you can find it in the dashboard",
             "required": true,
             "schema": {
               "type": "string",

@@ -1,33 +1,25 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Welcome to the Rendless API reference documentation '
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+{/* <Note>
+  Rendless is currently in development and API endpoints will be added soon.
+</Note> */}
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Rendless is an og image as a service API. It allows you to generate images for your website or app on the fly with [dynamic content using variables](/essentials/variables). You can use it to generate social media images, blog post images, and more.
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="Simple URL API"
+  icon="code"
+  href="/api-reference/endpoint/get"
 >
-  View the OpenAPI specification file
+  Render an image using a simple URL
 </Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+To access to the image generation API there is no need for authentication. You can directly use the API to generate images to your website or app.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
