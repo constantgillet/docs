@@ -29,24 +29,6 @@
               "type": "string",
               "format": "int64"
             }
-          },
-          {
-            "in": "query",
-            "name": "variables",
-            "schema": {
-              "propertyNames": {
-                "pattern": "^[A-Za-z][A-Za-z0-9]*$"
-              },
-              "type":"string",
-              "additionalProperties": {
-                "type": "string",
-                "pattern": "^[A-Za-z][A-Za-z0-9]*$"
-              },
-              "example": {
-                "variablesName1": "var1",
-                "variablesName2": "var2"
-              }
-            }
           }
         ],
         "responses": {
