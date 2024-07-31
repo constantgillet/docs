@@ -1,11 +1,13 @@
 ---
 title: WordPress Integration
-description: Integrate Rendless with WordPress
+description: Render dynamic og images in WordPress
 icon: 'wordpress'
 ---
 
 We will guide you through the process of integrating Rendless with WordPress.
 It is a simple process that requires some lines of code.
+
+You will learn how to generate dynamic og images in WordPress using Rendless.
 
 # Step 1: Create a template and prepare it
 
@@ -13,6 +15,16 @@ First, you need to create a template on the Rendless dashboard.
 You can create a template by clicking on the "Create template" button on the [Templates page](https://rendless.com/templates).
 
 Create a template with the desired design and content. Add variables to the template that you want to replace with dynamic data with the {{variable}} syntax.
+
+Learn more about [dynamic images with variables](/essentials/variables).
+
+<Frame
+  caption="Template example, dynamic variables are marked with {{}}"
+>
+  <img src="/images/wordpress-tuto-1.png" alt="Before image" className="rounded-xl" />
+</Frame>
+
+In the example above, the template has a title and an image. The title is marked with {{title}} and the image URL is marked with {{image}}. By default the template will render the title and the image URL that you have uploaded.
 
 # Step 2: Get the image generation URL
 
