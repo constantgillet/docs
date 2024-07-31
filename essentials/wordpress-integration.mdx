@@ -14,7 +14,7 @@ You will learn how to generate dynamic og images in WordPress using Rendless.
 First, you need to create a template on the Rendless dashboard. 
 You can create a template by clicking on the "Create template" button on the [Templates page](https://rendless.com/templates).
 
-Create a template with the desired design and content. Add variables to the template that you want to replace with dynamic data with the {{variable}} syntax.
+Create a template with the desired design and content. Add variables to the template that you want to replace with dynamic data with the `{{variable}}` syntax.
 
 Learn more about [dynamic images with variables](/essentials/variables).
 
@@ -24,8 +24,29 @@ Learn more about [dynamic images with variables](/essentials/variables).
   <img src="/images/wordpress-tuto-1.png" alt="Before image" className="rounded-xl" />
 </Frame>
 
-In the example above, the template has a title and an image. The title is marked with {{title}} and the image URL is marked with {{image}}. By default the template will render the title and the image URL that you have uploaded.
+In the example above, the template has a title and an image. The title is marked with `{{title}}` and the image URL is marked with `{{image}}`. By default the template will render the title and the image URL that you have uploaded.
 
 # Step 2: Get the image generation URL
+
+You can now get the image generation by clicking on the use template button on the template editor page or in the template liste page.
+
+<Frame
+  caption="Example of the image generation URL"
+>
+  <img src="/images/wordpress-tuto-2.png" alt="Before image" className="rounded-xl" />
+</Frame>
+
+The image generation URL is the URL that you will use in WordPress to generate the image with the dynamic data.
+It's just a simple URL like this:
+    
+    ```
+https://rendless.com/api/simple-url/TEMPLATE_ID
+    ```
+
+    You will need to replace `TEMPLATE_ID` with the ID of your template and provide the values for the variables in the query parameters.
+
+    ```
+https://rendless.com/api/simple-url/TEMPLATE_ID?title=Hello&image=https://example.com/image.jpg
+    ```
 
 # Step 3: Integrate the image generation URL in WordPress
