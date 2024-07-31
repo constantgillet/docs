@@ -50,3 +50,25 @@ https://rendless.com/api/simple-url/TEMPLATE_ID?title=Hello&image=https://exampl
     ```
 
 # Step 3: Integrate the image generation URL in WordPress
+
+Now you have to add the image image generation URL in your pages meta tags like this:
+
+It will dynamically get the post title and the post thumbnail URL and generate the image with the dynamic data.
+Don't forget to encode the values with `urlencode()` php function.
+
+```php
+<meta property='og:image' content="https://rendless.com/api/simple-url/TEMPLATE_ID?title=<?php echo urlencode(get_the_title()); ?>&image=<?php echo get_the_post_thumbnail_url(); ?>" /> 
+```
+
+You can do this by adding the following code in your theme's `header.php` file or use plugin to add the meta tags to your WordPress site.
+
+We recommend using a plugin like [Head, Footer and Post Injections](https://wordpress.org/plugins/header-footer/) to add the meta tags to your WordPress site.
+(If you are using this plugin, don't forget to enable PHP in the advanced tab)
+
+Just add the php code in the head tag of your WordPress site.
+
+<Frame
+  caption="Add the image generation URL in the head tag of your WordPress site"
+>
+  <img src="/images/wordpress-tuto-3.png" alt="Before image" className="rounded-xl" />
+</Frame>

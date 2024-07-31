@@ -22,9 +22,10 @@ You can use variables in the text diretly or in the properties inputs of the ele
 
 When generating an image using the API, you need to provide the values for the variables in the query parameters. For example, if you have a variable `name` in your template, you can provide the value for the variable like this:
 
-```bash
-curl -X GET https://rendless.com/api/simple-url/TEMPLATE_ID?name=John
 ```
+https://rendless.com/api/simple-url/TEMPLATE_ID?name=John
+```
+Don't forget to encode the values in the query parameters. You can use the `encodeURIComponent()` function in JavaScript or the `urlencode()` function in PHP.
 
 ## Variables limitations
 
