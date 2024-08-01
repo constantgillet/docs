@@ -43,6 +43,17 @@
               }
             }
           },
+          "301": {
+            "description": "Redirect to the cached image",
+            "content": {
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
           "400": {
             "description": "unexpected error",
             "content": {
