@@ -55,7 +55,8 @@
       "group": "Essentials",
       "pages": [
         "essentials/variables",
-        "essentials/wordpress-integration"
+        "essentials/wordpress-integration",
+        "essentials/php-integration"
       ]
     },
     {
